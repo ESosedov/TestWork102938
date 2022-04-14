@@ -1,0 +1,1236 @@
+{
+	"info": {
+		"_postman_id": "21894c6c-9811-4db6-ac5f-a1b606462fe7",
+		"name": "testwork102938",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Find Employee",
+					"item": [
+						{
+							"name": "Search Employees by Name",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/employees/?name=Shirley Watsica",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"employees",
+										""
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Shirley Watsica"
+										},
+										{
+											"key": "position",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "compamy_name",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "company_id",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "sort_asc",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "sort_desc",
+											"value": "name",
+											"disabled": true
+										},
+										{
+											"key": "offset",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Employees By Position",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/employees/?position=developer&sort_desc=name",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"employees",
+										""
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "position",
+											"value": "developer"
+										},
+										{
+											"key": "status",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "compamy_name",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "company_id",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "sort_asc",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "sort_desc",
+											"value": "name"
+										},
+										{
+											"key": "limit",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "offset",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Employees by Company Name",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/employees/?compamy_name=Swaniawski Inc&limit=2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"employees",
+										""
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "position",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "compamy_name",
+											"value": "Swaniawski Inc"
+										},
+										{
+											"key": "company_id",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "sort_asc",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "sort_desc",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "2"
+										},
+										{
+											"key": "offset",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Employees by Company Id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/employees/?company_id=8&sort_desc=name",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"employees",
+										""
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "position",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "compamy_name",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "company_id",
+											"value": "8"
+										},
+										{
+											"key": "sort_asc",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "sort_desc",
+											"value": "name"
+										},
+										{
+											"key": "limit",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "offset",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Employee By Status",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/employees/?status=freelance&sort_desc=name&limit=6",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"employees",
+										""
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "position",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": "freelance"
+										},
+										{
+											"key": "compamy_name",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "company_id",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "sort_asc",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "sort_desc",
+											"value": "name"
+										},
+										{
+											"key": "limit",
+											"value": "6"
+										},
+										{
+											"key": "offset",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create Employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Mick Smith",
+									"type": "text"
+								},
+								{
+									"key": "position",
+									"value": "develop",
+									"type": "text"
+								},
+								{
+									"key": "company_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "freelance",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/employees",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/employees/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Company To Employee",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "company_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "full-time",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/employees/7/add_company",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"7",
+								"add_company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Company From Employee",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "company_id",
+									"value": "8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/employees/8/delete_company",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"8",
+								"delete_company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Employee",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/employees/23",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"23"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Find Company",
+					"item": [
+						{
+							"name": "Search Company By Name",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/companies?name=Schmitt LLC",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"companies"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Schmitt LLC"
+										},
+										{
+											"key": "employee_name",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "employee_status",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "employee_position",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "employee_id",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "sort_asc",
+											"value": "name",
+											"disabled": true
+										},
+										{
+											"key": "sort_desc",
+											"value": "name",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "offset",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Company By Employee Name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/companies?employee_name=Janiya Wolf",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"companies"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "employee_name",
+											"value": "Janiya Wolf"
+										},
+										{
+											"key": "employee_position",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "employee_status",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "employee_id",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "sort_asc",
+											"value": "name",
+											"disabled": true
+										},
+										{
+											"key": "sort_desc",
+											"value": "id",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "offset",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Company By Employee Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/companies?employee_id=8&sort_desc=id",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"companies"
+									],
+									"query": [
+										{
+											"key": "employee_name",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "employee_status",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "employee_id",
+											"value": "8"
+										},
+										{
+											"key": "employee_position",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "sort_asc",
+											"value": "name",
+											"disabled": true
+										},
+										{
+											"key": "sort_desc",
+											"value": "id"
+										},
+										{
+											"key": "limit",
+											"value": "3",
+											"disabled": true
+										},
+										{
+											"key": "offset",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Seach Company By Employee Position",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/companies?employee_position=developer&limit=2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"companies"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "employee_name",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "employee_status",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "employee_position",
+											"value": "developer"
+										},
+										{
+											"key": "employee_id",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "sort_asc",
+											"value": "name",
+											"disabled": true
+										},
+										{
+											"key": "sort_desc",
+											"value": "name",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "2"
+										},
+										{
+											"key": "offset",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Company By Employee Status",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/companies?employee_status=freelance",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"companies"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "employee_name",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "employee_position",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "employee_status",
+											"value": "freelance"
+										},
+										{
+											"key": "employee_id",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "sort_asc",
+											"value": "name",
+											"disabled": true
+										},
+										{
+											"key": "sort_desc",
+											"value": "id",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "3",
+											"disabled": true
+										},
+										{
+											"key": "offset",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create Company",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Micky and son",
+									"type": "text"
+								},
+								{
+									"key": "employee_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "outsource",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/companies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Company",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/companies/8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"companies",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Employee To Company",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "employee_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "full-time",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/companies/7/add_employee",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"companies",
+								"7",
+								"add_employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Employee From Company",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "employee_id",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/companies/7/delete_employee",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"companies",
+								"7",
+								"delete_employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Company",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/companies/9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"companies",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "ggg555hhh666",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
